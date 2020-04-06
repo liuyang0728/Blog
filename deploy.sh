@@ -20,12 +20,12 @@ git config --local user.name "liuyang0728"
 git config --local user.email "liuyang728@sina.cn"
 
 # 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+# git push -f git@github.com:<U_NAME>/<U_NAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 # 如果使用 travis 持续集成
-git push -f https://${GH_TOKEN}@github.com/<USERNAME>/<REPO>.git master:gh-pages
+git push -f https://${GH_TOKEN}@github.com/<U_NAME>/<REPO>.git master:gh-pages
 
 cd -
