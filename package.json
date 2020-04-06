@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/liuyang0728/Blog/issues"
   },
-  "homepage": "https://github.com/liuyang0728/Blog#readme"
+  "homepage": "https://github.com/liuyang0728/Blog#readme",
+  "devDependencies": {
+    "vuepress": "^1.4.0"
+  }
 }
