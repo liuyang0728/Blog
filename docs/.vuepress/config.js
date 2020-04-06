@@ -56,7 +56,7 @@ module.exports = {
             title: 'Javascript',
             collapsable: false,
             children: [
-                ['javascript/es6', '哈哈']
+                ['javascript/es6', 'ESscript6']
             ]
           }
         ]
