@@ -1,16 +1,12 @@
 language: node_js
+sudo: required
 node_js:
-    - 10
-cache: npm
-install:
-    - npm
+  - 8.11.3
+branch: master
+cache:
+  directories:
+    - node_modules
+before_install:
+  - export TZ='Asia/Shanghai' # 设置时区
 script:
-    - npm run build
-after_success:
-    - cd docs/.vuepress/dist
-    - git init
-    - git config --global user.name "${U_NAME}"
-    - git config --global user.email "${U_EMAIL}"
-    - git add -A
-    - git commit -m 'deploy'
-    - git push --quiet --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - ./deploy.sh
